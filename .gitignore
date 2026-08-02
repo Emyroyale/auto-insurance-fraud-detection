@@ -13,5 +13,4 @@ __pycache__/
 Thumbs.db
 
 # Large exported prediction files (regenerate by running the notebook)
-outputs/test_predictions.csv
 anaconda_projects/
