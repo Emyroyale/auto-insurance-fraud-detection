@@ -1,61 +1,61 @@
 feature,coefficient
-authorities_contacted_None,1.0788892977733393
-total_claim_amount,-0.6358456513972599
-claim_amount,0.6327896284788246
-incident_severity_Total Loss,0.5443724843851114
-insured_occupation_Engineer,-0.4218212347481025
-insured_occupation_Teacher,-0.41640261181012667
-insured_occupation_Doctor,-0.39446043945572984
-insured_occupation_Technician,-0.3566274704554403
-insured_occupation_Manager,-0.3473289105351485
-witnesses,-0.2765206081406499
-insured_occupation_Lawyer,-0.2754225418157491
-insured_age,-0.16366972634434884
-incident_state_GA,0.11428514896505218
-authorities_contacted_Police,-0.10033139930176811
-policy_state_TX,0.08852368860418977
-policy_state_GA,0.08826227953636209
-insured_hobbies_paintball,0.0813414404376574
-insured_occupation_Sales,0.07979088717416087
-policy_state_NC,0.07315985396201202
-incident_type_Parked Car,-0.0724866020622347
-insured_education_level_PhD,0.057217166812835785
-insured_hobbies_movies,0.057166698912387556
-policy_state_NY,-0.05568541358403144
-insured_hobbies_yachting,-0.05183325108510104
-incident_type_Single Vehicle Collision,-0.050559954172704605
-claim_to_premium_ratio,0.04982471430678315
-policy_state_PA,0.04830627308018683
-incident_state_TX,0.04818742335746478
-collision_type_Side,0.041284444502259786
-incident_state_IL,0.0374331897365937
-incident_state_MI,-0.03457945267283159
-insured_sex_MALE,0.034032261859900936
-insured_sex_OTHER,0.027364111614573968
-incident_state_OH,0.025613867256514475
-insured_hobbies_chess,0.023990969460956055
-incident_state_NC,0.023295243104963104
-policy_state_OH,0.02208695692288901
-insured_hobbies_reading,-0.021218597369073743
-policy_deductible,0.02112518932660623
-incident_state_NY,0.019674313287937884
-incident_state_FL,0.017419670506304517
-incident_type_Vehicle Theft,0.017240535992759883
-incident_dayofweek,0.017117757946483077
-number_of_vehicles_involved,-0.016896568471311393
-insured_hobbies_hiking,-0.015560068681022401
-policy_annual_premium,0.01555133179153613
-authorities_contacted_Fire,-0.014827100873214996
-incident_state_PA,-0.01416860077994957
-policy_state_FL,-0.011989492367402012
-bodily_injuries,0.011649635666328356
-incident_severity_Minor Damage,0.010820318423932366
-collision_type_Rear,0.010448061856915745
-collision_type_Unknown,0.010382049562710651
-policy_state_IL,-0.009559947748803237
-insured_education_level_High School,0.009541325493481275
-incident_month,0.00910575341780728
-incident_hour_of_the_day,-0.007429484708248266
-policy_state_MI,0.0071032575914678625
-police_report_available_Yes,-0.005289667942032042
-insured_education_level_Masters,0.0017734195469904155
+authorities_contacted_None,1.0788892977733398
+total_claim_amount,-0.6358456513972648
+claim_amount,0.6327896284788295
+incident_severity_Total Loss,0.5443724843851105
+insured_occupation_Engineer,-0.42182123474810934
+insured_occupation_Teacher,-0.41640261181013416
+insured_occupation_Doctor,-0.39446043945573606
+insured_occupation_Technician,-0.3566274704554463
+insured_occupation_Manager,-0.3473289105351551
+witnesses,-0.27652060814064944
+insured_occupation_Lawyer,-0.27542254181575515
+insured_age,-0.16366972634434482
+incident_state_GA,0.11428514896505416
+authorities_contacted_Police,-0.10033139930175888
+policy_state_TX,0.08852368860419184
+policy_state_GA,0.08826227953636485
+insured_hobbies_paintball,0.08134144043765969
+insured_occupation_Sales,0.07979088717415818
+policy_state_NC,0.0731598539620146
+incident_type_Parked Car,-0.07248660206223201
+insured_education_level_PhD,0.057217166812838255
+insured_hobbies_movies,0.05716669891238984
+policy_state_NY,-0.05568541358402894
+insured_hobbies_yachting,-0.051833251085098474
+incident_type_Single Vehicle Collision,-0.0505599541727003
+claim_to_premium_ratio,0.04982471430678222
+policy_state_PA,0.04830627308018878
+incident_state_TX,0.04818742335746787
+collision_type_Side,0.041284444502261465
+incident_state_IL,0.037433189736596394
+incident_state_MI,-0.03457945267282887
+insured_sex_MALE,0.03403226185990107
+insured_sex_OTHER,0.027364111614575134
+incident_state_OH,0.025613867256516473
+insured_hobbies_chess,0.023990969460958626
+incident_state_NC,0.02329524310496569
+policy_state_OH,0.022086956922891372
+insured_hobbies_reading,-0.021218597369072268
+policy_deductible,0.02112518932660402
+incident_state_NY,0.01967431328793959
+incident_state_FL,0.01741967050630597
+incident_type_Vehicle Theft,0.017240535992754727
+incident_dayofweek,0.01711775794648473
+number_of_vehicles_involved,-0.016896568471312087
+insured_hobbies_hiking,-0.015560068681020016
+policy_annual_premium,0.015551331791538028
+authorities_contacted_Fire,-0.014827100873218084
+incident_state_PA,-0.014168600779947417
+policy_state_FL,-0.011989492367399582
+bodily_injuries,0.011649635666323002
+incident_severity_Minor Damage,0.010820318423933509
+collision_type_Rear,0.010448061856915256
+collision_type_Unknown,0.010382049562710499
+policy_state_IL,-0.009559947748800533
+insured_education_level_High School,0.009541325493479828
+incident_month,0.00910575341780372
+incident_hour_of_the_day,-0.007429484708250746
+policy_state_MI,0.007103257591469814
+police_report_available_Yes,-0.005289667942038493
+insured_education_level_Masters,0.0017734195469910987
