@@ -1,0 +1,13 @@
+model,actual,predicted,count
+LR (claim amount only),Not Fraud,Not Fraud,2867
+LR (claim amount only),Not Fraud,Fraud,2445
+LR (claim amount only),Fraud,Not Fraud,335
+LR (claim amount only),Fraud,Fraud,353
+LR (multivariate),Not Fraud,Not Fraud,3599
+LR (multivariate),Not Fraud,Fraud,1713
+LR (multivariate),Fraud,Not Fraud,234
+LR (multivariate),Fraud,Fraud,454
+Random Forest,Not Fraud,Not Fraud,4020
+Random Forest,Not Fraud,Fraud,1292
+Random Forest,Fraud,Not Fraud,241
+Random Forest,Fraud,Fraud,447
