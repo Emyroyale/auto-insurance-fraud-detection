@@ -1,0 +1,16 @@
+# Environments
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large exported prediction files (regenerate by running the notebook)
+outputs/test_predictions.csv
