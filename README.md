@@ -4,15 +4,41 @@ Does the total claim amount significantly predict whether an auto insurance clai
 
 Built as the capstone project for WGU's B.S. Data Analytics program (D502/D195).
 
-## Research question
+## Questions this project answers
 
-Does claim amount significantly predict fraud outcome in auto insurance claims?
+**Core research question:** Does claim amount significantly predict fraud outcome in auto insurance claims?
+
+That question breaks down into a few more specific ones the analysis and dashboard work through:
+
+- **Is the relationship statistically significant?** Yes — at n = 30,000, claim amount is a statistically significant predictor of fraud (p < .001).
+- **Is that effect practically meaningful, or just statistically detectable?** Practically small — an odds ratio of ~1.02 per $1,000 in claim amount, and a pseudo R² of 0.002. Statistical significance and practical significance turn out to be different questions with different answers here.
+- **How well can claim amount alone classify a claim as fraudulent?** Not well — a univariate logistic regression on claim amount alone only reaches ROC-AUC ≈ 0.54, barely better than chance.
+- **Does adding more claim details improve prediction?** Yes, substantially — bringing in incident severity, witnesses, and authorities contacted lifts a random forest to ROC-AUC ≈ 0.72.
+- **Which model performs best, and by how much?** Compared across accuracy, precision, recall, F1, and ROC-AUC, the random forest outperforms both the univariate and multivariate logistic regressions (see the Model Diagnostics dashboard page).
+- **How does fraud rate vary with claim amount?** Fraud rate rises noticeably in the higher claim-amount bands (see the Claim Patterns dashboard page).
+- **Can the dataset itself be trusted as real-world claims data?** Only partially — it shows signs consistent with synthetic generation (near-uniform category distributions, near-random state matching, placeholder-style city names), which caps how much genuine signal any model can extract from it.
 
 ## Key findings
 
 - Claim amount alone is a **statistically significant** predictor of fraud (p < .001, n = 30,000), but the effect is **practically small**: an odds ratio of about 1.02 per $1,000 in claim amount, and a univariate logistic regression only reaches ROC-AUC ≈ 0.54.
 - Extending the model with the dataset's other fields (incident severity, witnesses, authorities contacted) lifts a random forest to ROC-AUC ≈ 0.72.
 - The dataset shows several characteristics consistent with synthetic generation (near-uniform category distributions, near-random state matching between policy and incident location, placeholder-style city names), which caps how much genuine signal any model can extract from it. This is discussed directly in the notebook rather than glossed over.
+
+## Dashboard preview
+
+Interactive Power BI dashboard (`dashboard/fraud_detection_dashboard.pbix`) with three pages: Overview, Claim Patterns, and Model Diagnostics.
+
+**Model Performance Overview** — hypothesis test KPIs (p-value, pseudo R², odds ratio) alongside accuracy/precision/recall/F1/ROC-AUC across all three models.
+
+![Model performance overview](docs/screenshots/model_performance_overview.png)
+
+**Claim Patterns** — claim volume by amount and fraud status, and fraud rate by claim amount band.
+
+![Claim patterns](docs/screenshots/claim_patterns.png)
+
+**Model Diagnostics** — ROC curve comparison across models and a confusion matrix by model.
+
+![Model diagnostics](docs/screenshots/model_diagnostics.png)
 
 ## Repo structure
 
@@ -25,6 +51,8 @@ auto-insurance-fraud-detection/
 │   └── processed/                       # Cleaned dataset
 ├── outputs/                             # Model comparison table, charts, exported predictions
 ├── dashboard/                           # Power BI dashboard file
+├── docs/
+│   └── screenshots/                     # Dashboard preview images
 └── requirements.txt
 ```
 
