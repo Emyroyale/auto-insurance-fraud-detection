@@ -14,6 +14,22 @@ Does claim amount significantly predict fraud outcome in auto insurance claims?
 - Extending the model with the dataset's other fields (incident severity, witnesses, authorities contacted) lifts a random forest to ROC-AUC ≈ 0.72.
 - The dataset shows several characteristics consistent with synthetic generation (near-uniform category distributions, near-random state matching between policy and incident location, placeholder-style city names), which caps how much genuine signal any model can extract from it. This is discussed directly in the notebook rather than glossed over.
 
+## Dashboard preview
+
+Interactive Power BI dashboard (`dashboard/fraud_detection_dashboard.pbix`) with three pages: Overview, Claim Patterns, and Model Diagnostics.
+
+**Model Performance Overview** — hypothesis test KPIs (p-value, pseudo R², odds ratio) alongside accuracy/precision/recall/F1/ROC-AUC across all three models.
+
+![Model performance overview](docs/screenshots/model_performance_overview.png)
+
+**Claim Patterns** — claim volume by amount and fraud status, and fraud rate by claim amount band.
+
+![Claim patterns](docs/screenshots/claim_patterns.png)
+
+**Model Diagnostics** — ROC curve comparison across models and a confusion matrix by model.
+
+![Model diagnostics](docs/screenshots/model_diagnostics.png)
+
 ## Repo structure
 
 ```
@@ -25,6 +41,8 @@ auto-insurance-fraud-detection/
 │   └── processed/                       # Cleaned dataset
 ├── outputs/                             # Model comparison table, charts, exported predictions
 ├── dashboard/                           # Power BI dashboard file
+├── docs/
+│   └── screenshots/                     # Dashboard preview images
 └── requirements.txt
 ```
 
